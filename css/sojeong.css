@@ -1,0 +1,199 @@
+@import url('http://sj926thwjdk.cafe24.com/coway/theme/ety_theme_company/css/font_face.css');
+
+* {font-family: 'S-CoreDream-3Light',sans-serif;font-size:16px;}
+@media (min-width:992px) {
+  * .container {max-width:1310px}
+}
+
+/* 폰트 */
+.font_s {font-family: 'S-CoreDream-3Light',sans-serif;}
+.fw_b {font-weight: bold;}
+
+/* 모바일  */
+.mobile_ver {display:none;}
+
+/* quick */
+.scroll #quick {
+  position:fixed;
+  right:100px; bottom:10%;
+  z-index:100000;
+  text-align: center;
+
+  }
+
+.scroll #quick .desk li {
+  width:100px;
+  border:1px solid #ccc;
+  padding:10px 5px;
+  border-radius:4px;
+  text-align:left;
+}
+.scroll #quick:active{}
+.scroll #quick li {display:none;}
+.scroll #quick .desk li:hover {margin-left:-50px;}
+
+.scroll #quick button {width:50px; height:50px; background-color:#fff; color:#222;
+border:1px solid #222;}
+.scroll #quick button a {padding: 15px 10px;}
+
+.scroll #quick .q_btn .inquiry {margin-bottom:4px;width:50px; height:50px;background-color:#fff; color:#222;
+border:1px solid #222; }
+
+
+
+
+
+/* nav - 메뉴 */
+.navbar {padding: 0;} /* navbar 위쪽 패딩 없애기 */
+.navbar .nav-link {color:#fff; font-size:1.1rem}
+.navbar .dropdown-toggle::after {display:none}
+.navbar .navbar-expand-lg .navbar-nav .nav-link {padding-right:0;padding-left:0;} /* scss로 되어 있는 기본 스타일 값 덮어쓰기 */
+.navbar .navbar-nav li {padding:0 30px;} /* 각각메뉴 사이  */
+.navbar .navbar-nav li:last-child {padding-right:0}
+.navbar .dropdown-menu {min-width: 150px;} /* ul너비 */
+.navbar .dropdown-item {text-align:center;}
+
+.navbar .container .logo .scroll_up {width:150px;padding-top:25px;}
+.navbar .container .logo .scroll_down {display:none;}
+.navbar .container .logo-box {padding:15px 20px 30px; background-color:#00a3e0}
+
+.navbar #loginDiv ul {margin-bottom: 0;}
+.navbar #loginDiv .xi-user:before {content: "\e9f3"; color: #fff;padding-left:3px;}
+.navbar #loginDiv .xi-user-o:before {content: "\e9f5"; color: #fff;}
+
+
+/* 스크롤 동작시 실행 */
+.scroll .container .logo .scroll_up {display:none;}
+.scroll .container .logo .scroll_down {display:block;width:120px;padding-top:5px;}
+.scroll .container .logo-box {padding:0; background-color:unset; box-shadow:unset;}
+
+.scroll .fixed-top {background: rgba(255, 255, 255, 0.5); height:50px;}
+.scroll .fixed-top .container .nav-link {color:#555}
+.scroll .fixed-top #loginDiv .xi-user-o::before {content: "\e9f5"; color:#555} /* 로그아웃 상태*/
+.scroll .fixed-top #loginDiv .xi-user::before {content: "\e9f3"; color:#555} /* 로그인 상태*/
+
+
+
+/* products */
+.newBox {background-color:#f3f3f3}
+.newBox .container {max-width:1467px; padding:115px 0}
+.newBox .products .imgBox {position:relative; display:inline-block; width:450px; height:560px}
+.newBox .mattress,.newBox .allInOne {margin-right:132px;}
+.newBox h2::before {content: ''; display:block; width:1px; height:30px; margin-bottom:30px; background-color:#444; margin-left: 50%;}
+.newBox h2 {width:100%; text-align:center;margin-bottom:85px;}
+.newBox .txtBox {position:absolute; left:0; bottom:0; background-color:#f3f3f3;width:400px; height:150px; padding:20px 40px 0;}
+.newBox .txtBox p {color:#686058; font-size:26px}
+.newBox .products li a {position: relative;display: block; overflow: hidden;width: 450px;}
+.newBox .products li a:hover img {transform:scale(1.1);}
+.newBox .products li a img {transition:transform .5s}
+
+
+/* youtube */
+#youtube > div {position:relative; height:0; padding-bottom:56%}
+#youtube iframe {position:absolute; left:0; right:0; top:0; z-index:10; margin-right:20px;}
+#youtube::after {content:''; display:block; position:absolute; top:50px; left:50px; margin-right:20px; width:100%; height:100%; border:1px solid #a99284}
+
+#vd_d {padding:330px 0;}
+#vd_d .care {padding-top:50px;margin-left: 146px;}
+#vd_d .care h2 {margin-bottom:35px;}
+#vd_d .care .txt {margin-bottom:50px;}
+
+
+
+/* 고객지원 */
+#cus_d {padding:250px 0;}
+#cus_d .support li { width: 200px; height: 215px; box-sizing: border-box; margin-right:145px; background-color: rgba(245,232,206,0.3);border-radius: 50%;}
+#cus_d .support li a {display:flex; margin-top: 35px; flex-direction: column; align-items: center;}
+#cus_d .support li a span {margin-top:20px;}
+#cus_d .support li:last-child {margin-right: 0;}
+#cus_d .support li:first-child img {width:70px;}
+#cus_d .support li img {width:80px;}
+.cenTxt {text-align: center; margin-bottom:140px;}
+
+
+/* app store */
+#appStore .btn-outline-light {width:170px; height:60px;}
+#appStore p {color:#fff}
+#appStore button.google {margin-right:15px;}
+#appStore button > i {padding-right:10px; vertical-align: middle;}
+#appStore button span {vertical-align: middle;}
+#appStore h2 span {font-size: 2rem; color:#00a3e0}
+
+
+
+
+/* 이벤트 */
+#applay {position:relative;padding:142px 0; }
+#applay h2, #applay > p {text-align: center;}
+#applay > p {margin:50px 0;}
+#applay .how h3 {margin-left: -240px;padding-bottom: 35px;font-size: 20px;}
+.ap_d .way {background-color:#f3f3f3;padding:60px 20px;}
+.user_info {position:absolute;bottom:-138px; right: 300px;background-color:#5a5a5a;padding:20px;color:#fff}
+.step {display: flex;flex-direction: column; align-items: center; margin:0 75px; }
+.ap_how {display:flex;}
+.ap_how img {margin-top:55px;}
+
+.user_info .useSet {margin-bottom:10px;}
+
+.user_info .userName label {margin-right:130px;}
+.user_info .phonNum label{margin-right:95px;}
+.user_info .address label {margin-right:133px;}
+.user_info .whishTime label {margin-right:43px;}
+.user_info .careService label {margin-right:33px;}
+
+
+.user_info input,.user_info select,.user_info button {padding:5px; border-radius:10px;  border-style: none;vertical-align: middle; outline:none;}
+.user_info label {margin-bottom:0}
+
+.user_info .phonNum input,.user_info .phonNum select {width:100px;}
+.user_info .address .ad_txt1 {width:334px; margin-left: 171px; margin-top: 10px;}
+
+
+
+.agree > p ,.cBtn span {font-size: 12px;}
+.agree .ag {padding:25px 0 10px; margin-bottom: 0}
+.agree .ag_txt {padding:10px;border:1px solid #fff; border-radius:5px;}
+.cBtn {width:100%; text-align: right; margin-top: -13px;}
+.cBtn span {text-align: right;}
+#applay button.applyBtn {background-color:#f3f3f3; padding:15px 0; color:#222; text-align: center; width: 100%; margin-top: 30px;}
+
+
+
+
+/* sns */
+.sns_r {padding:250px 0 80px;}
+.sns {padding-top:100px;}
+.sns_r > p {font-size:18px;text-align: center; padding-top:30px;}
+#divConcierge .title {display: none;}
+.post-subject, .lt_info {display: none;}
+
+
+
+
+
+
+
+/* footer */
+.ft_bg .ft_txt::before {content:'';display:block;width:100%; height:1px; background-color:#222}
+.ft_bg .ft_txt::after {content:'';display:block;width:100%; height:1px; background-color:#222}
+.ft_txt .container {display:flex;}
+.ft_txt .ft_info {display:flex; width:700px; margin:auto 0;}
+.ft_txt .ft_info li {margin-right:50px;}
+.ft_txt .ft_info li span {color:#00a3e0;font-size: 17px;}
+.ft_txt #tnb-left { width:100%; text-align:right; }
+
+.ft_txt a {display:inline-block;}
+.xi-youtube-play:before {content: "\ec32";color: #222;margin-right:8px;}
+.xi-instagram:before {content: "\ebe9"; color: #222;}
+.xi-facebook:before {content: "\ebd3"; color: #222;}
+
+.ft_under {margin-top:50px;}
+.ft_I {display: flex;}
+.ft_I h2 img {width:150px;}
+.ft_I .ft_T {width:700px; margin-left:80px;}
+.ft_I .ft_T p,.ft_I .ft_T a {font-size:14px; color:#222}
+
+.ft_I .call {margin-left:90px;}
+.copy,.copy span {font-size: 13px; margin-bottom:50px;}
+
+.call .num {font-size:35px;}
