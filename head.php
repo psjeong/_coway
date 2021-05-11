@@ -39,24 +39,11 @@ if(defined('_INDEX_')) {
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-<!-------------------------- 수정해서 사용하세욧 -------------------------->
-<meta name="description" content="무료테마, 에티무료테마, 무료반응형홈페이지">
-<meta property="og:type" content="website">
-<meta property="og:title" content="무료테마 에티테마">
-<meta property="og:description" content="반응형홈페이지제작, 무료커뮤니티제작, 에티테마, 그누보드 무료 테마, 무료 반응형 커뮤니티">
-<meta property="og:image" content="http://company.ety.kr/theme/ety_theme_company/img/logo.png">
-<meta property="og:url" content="http://company.ety.kr/">
-<!-------------------------- ./수정해서 사용하세요 -------------------------->
-
 
 <!-------------------------- 네비게이션 -------------------------->
 
 <style>
-.collapse.in{
-    -webkit-transition-delay: 4s;
-    transition-delay: 5s;
-    visibility: visible;
-}
+
 </style>
 <nav class="navbar fixed-top navbar-expand-lg navbar-white fixed-top">
   <div class="container">

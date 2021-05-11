@@ -24,12 +24,7 @@ if (!$g5['lo_location'])
 $g5['lo_url'] = addslashes(clean_xss_tags($_SERVER['REQUEST_URI']));
 if (strstr($g5['lo_url'], '/'.G5_ADMIN_DIR.'/') || $is_admin == 'super') $g5['lo_url'] = '';
 
-/*
-// 만료된 페이지로 사용하시는 경우
-header("Cache-Control: no-cache"); // HTTP/1.1
-header("Expires: 0"); // rfc2616 - Section 14.21
-header("Pragma: no-cache"); // HTTP/1.0
-*/
+
 ?>
 
 <!doctype html>
@@ -54,9 +49,8 @@ if($config['cf_add_meta'])
 <link rel="shortcut icon" href="/img/coway_pavicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/<?php echo G5_IS_MOBILE ? 'mobile' : 'default'; ?>.css?ver=<?php echo time(); ?>">
-<!--[if lte IE 8]>
-<script src="<?php echo G5_JS_URL ?>/html5.js"></script>
-<![endif]-->
+
+
 <script>
 // 자바스크립트에서 사용하는 전역변수 선언
 var g5_url       = "<?php echo G5_URL ?>";
@@ -76,7 +70,7 @@ var g5_cookie_domain = "<?php echo G5_COOKIE_DOMAIN ?>";
 <script src="<?php echo G5_JS_URL ?>/placeholders.min.js"></script>
 <!-- <link rel="stylesheet" href="<?php echo G5_JS_URL ?>/font-awesome/css/font-awesome.min.css"> -->
 	<script src="<?php echo G5_THEME_URL?>/assets/owlcarousel/js/owl.carousel.min.js"></script>
-  
+
 <?php
 if(G5_IS_MOBILE) {
     echo '<script src="'.G5_JS_URL.'/modernizr.custom.70111.js"></script>'.PHP_EOL; // overflow scroll 감지
@@ -107,10 +101,15 @@ if(!defined('G5_IS_ADMIN'))
 <link href="<?php echo G5_THEME_URL?>/css/ety.css?ver=<?php echo time(); ?>" rel="stylesheet">
 <link rel="stylesheet" href="/coway/theme/ety_theme_company/css/sojeong.css?ver=<?php echo time(); ?>">
 <link href="<?php echo G5_THEME_URL?>/css/modern-business.css" rel="stylesheet">
+<link rel="stylesheet" href="/coway/theme/ety_theme_company/fullpage/fullpage.min.css">
+<link rel="stylesheet" href="/dist/aos.css">
 <link rel="stylesheet" href="/coway/theme/ety_theme_company/css/psj_mobile.css?ver=<?php echo time(); ?>">
 
 </head>
 <body class="mother"<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
+
+
+
 <?php
 if ($is_member) { // 회원이라면 로그인 중이라는 메세지를 출력해준다.
     $sr_admin_msg = '';
