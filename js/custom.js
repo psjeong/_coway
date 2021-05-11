@@ -51,27 +51,27 @@ $(function(){
 });
 
 
-  $(document).ready(function(){
-    /* 슬라이더 - 3칼럼노출 */
-    var slider_column = $('#sliderBanner').owlCarousel({
-      items:1,
-      loop:true,
-      mouseDrag:false,
-      nav:true,
-      autoplay:true,
-      autoplayTimeout:3000,
-      autoplayHoverPause:true,
-      center: false,
-      margin: 10,
-      lazyLoad:true
-    });
-
+$(document).ready(function(){
+  /* 슬라이더 - 3칼럼노출 */
+  var slider_column = $('#sliderBanner').owlCarousel({
+    items:1,
+    loop:true,
+    mouseDrag:false,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: false,
+    margin: 10,
+    lazyLoad:true
   });
 
+});
 
 
-  //애니메이션
-  AOS.init({
+
+//애니메이션
+AOS.init({
   // Global settings:
   disable: false,
   startEvent: 'DOMContentLoaded',
@@ -91,24 +91,22 @@ $(function(){
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom',
   // defines which position of the element regarding to window should trigger the animation
+});
 
 
-  $(document).ready(function(){
-    /* 슬라이더 - 3칼럼노출 */
-    var slider_column = $('#sliderBanner').owlCarousel({
-      items:1,
-      loop:true,
-      mouseDrag:false,
-      nav:true,
-      autoplay:true,
-      autoplayTimeout:3000,
-      autoplayHoverPause:true,
-      center: false,
-      margin: 10,
-      lazyLoad:true
-    });
-
+$(document).ready(function(){
+  /* 슬라이더 - 3칼럼노출 */
+  var slider_column = $('#sliderBanner').owlCarousel({
+    items:1,
+    loop:true,
+    mouseDrag:false,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: false,
+    margin: 10,
+    lazyLoad:true
   });
-
 
 });

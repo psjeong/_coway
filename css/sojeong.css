@@ -1,16 +1,29 @@
-@import url('http://sj926thwjdk.cafe24.com/coway/theme/ety_theme_company/css/font_face.css');
+@import url('//sj926thwjdk.cafe24.com/coway/theme/ety_theme_company/css/font_face.css');
 
 * {font-family: 'S-CoreDream-3Light',sans-serif;font-size:16px;}
-@media (min-width:992px) {
-  * .container {max-width:1310px}
+
+
+
+@media (max-width:991px) {
+  .navbar .container .logo-box {padding:0!important; background-color:unset!important;}
+  .scroll .container .logo .scroll_down {display: block;width: 120px;margin-top: -10px;}
+  .xi-bars:before {content: "\e91c";  color:#fff}
+  .scroll .xi-bars:before {content: "\e91c"; color:#222}
+  .scroll_up_m {display:block; width:120px;}
+  .scroll .scroll_up_d,.scroll_up_d {display:none;}
+  .scroll .scroll_up_m {display:none;}
 }
- 
+
 
 .collapse.in{
     -webkit-transition-delay: 4s;
     transition-delay: 5s;
     visibility: visible;
 }
+
+
+/* 슬라이드 이미지 */
+.mainSliderItme {background-image:url();}
 
 
 /* 폰트 */
@@ -52,7 +65,8 @@ border:1px solid #222; }
 
 
 /* nav - 메뉴 */
-.navbar {padding: 0;} /* navbar 위쪽 패딩 없애기 */
+.navbar {padding-top: 10px;} /* navbar 위쪽 패딩 없애기 */
+.scroll .navbar {padding-top: 0;}
 .navbar .nav-link {color:#fff; font-size:1.1rem}
 .navbar .dropdown-toggle::after {display:none}
 .navbar .navbar-expand-lg .navbar-nav .nav-link {padding-right:0;padding-left:0;} /* scss로 되어 있는 기본 스타일 값 덮어쓰기 */
@@ -63,7 +77,7 @@ border:1px solid #222; }
 
 .navbar .container .logo .scroll_up {width:150px;padding-top:25px;}
 .navbar .container .logo .scroll_down {display:none;}
-.navbar .container .logo-box {padding:15px 20px 30px; background-color:#00a3e0}
+.navbar .container .logo-box {padding:40px 20px 30px; background-color:#00a3e0}
 
 .navbar #loginDiv ul {margin-bottom: 0;}
 .navbar #loginDiv .xi-user:before {content: "\e9f3"; color: #fff;padding-left:3px;}
@@ -86,7 +100,7 @@ border:1px solid #222; }
 .newBox {background-color:#f3f3f3}
 .newBox .container {max-width:1467px; padding:115px 0}
 .newBox .products .imgBox {position:relative; display:inline-block; width:450px; height:560px}
-.newBox .mattress,.newBox .allInOne {margin-right:132px;}
+/* .newBox .mattress,.newBox .allInOne {margin-right:132px;} */
 .newBox h2::before {content: ''; display:block; width:1px; height:30px; margin-bottom:30px; background-color:#444; margin-left: 50%;}
 .newBox h2 {width:100%; text-align:center;margin-bottom:85px;}
 .newBox .txtBox {position:absolute; left:0; bottom:0; background-color:#f3f3f3;width:400px; height:150px; padding:20px 40px 0;}
@@ -109,8 +123,8 @@ border:1px solid #222; }
 
 
 /* 고객지원 */
-#cus_d {padding:250px 0;}
-#cus_d .support li { width: 200px; height: 215px; box-sizing: border-box; margin-right:145px; background-color: rgba(245,232,206,0.3);border-radius: 50%;}
+#cus_d {padding:200px 0;}
+#cus_d .support li { width: 200px; height: 200px; box-sizing: border-box; /*margin-right:145px;*/ background-color: rgba(245,232,206,0.3);/*border-radius: 50%;*/}
 #cus_d .support li a {display:flex; margin-top: 35px; flex-direction: column; align-items: center;}
 #cus_d .support li a span {margin-top:20px;}
 #cus_d .support li:last-child {margin-right: 0;}
@@ -120,6 +134,7 @@ border:1px solid #222; }
 
 
 /* app store */
+#appStore {margin-top:300px;}
 #appStore .btn-outline-light {width:170px; height:60px;}
 #appStore p {color:#fff}
 #appStore button.google {margin-right:15px;}
@@ -185,7 +200,7 @@ border:1px solid #222; }
 .ft_bg .ft_txt::before {content:'';display:block;width:100%; height:1px; background-color:#222}
 .ft_bg .ft_txt::after {content:'';display:block;width:100%; height:1px; background-color:#222}
 .ft_txt .container {display:flex;}
-.ft_txt .ft_info {display:flex; width:700px; margin:auto 0;}
+.ft_txt .ft_info {display:flex; width:1000px; margin:auto 0;}
 .ft_txt .ft_info li {margin-right:50px;}
 .ft_txt .ft_info li span {color:#00a3e0;font-size: 17px;}
 .ft_txt #tnb-left { width:100%; text-align:right; }
@@ -196,12 +211,10 @@ border:1px solid #222; }
 .xi-facebook:before {content: "\ebd3"; color: #222;}
 
 .ft_under {margin-top:50px;}
-.ft_I {display: flex;}
 .ft_I h2 img {width:150px;}
-.ft_I .ft_T {width:700px; margin-left:80px;}
+.ft_I .ft_T {width:700px;}
 .ft_I .ft_T p,.ft_I .ft_T a {font-size:14px; color:#222}
 
-.ft_I .call {margin-left:90px;}
 .copy,.copy span {font-size: 13px; margin-bottom:50px;}
 
 .call .num {font-size:35px;}

@@ -13,62 +13,62 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <?php
 /**************************************************************************
-ety_theme_company 테마 사용
+ety_theme_company테마 사용
 **************************************************************************/
 ?>
 
 
- 
-
-<!-------------------------- 슬라이드 -------------------------->
-
-  <?php echo latest('theme/pic_basic_owl','event',3,100); ?>
 
 
 
-<!-------------------------------- NEW 제품 -------------------------------->
+<!--------------------------슬라이드 -------------------------->
+<?php echo latest('theme/pic_basic_owl','event',3,100); ?>
+
+
+  <!-------------------------------- NEW 제품 -------------------------------->
 
   <div class="newBox section">
   	<div class="container">
-        <div class="products row">
+        <div class="products row" >
           <h2 class="font_s fw_b" data-aos="fade-up" data-aos-duration="3000">PRODUCTS</h2>
-          <ul class="row">
-            <li class="mattress col-md-3"  data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-out">
-              <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=products&sca=%EB%A7%A4%ED%8A%B8%EB%A6%AC%EC%8A%A4">
-                <span class="imgBox">
-                  <img src="/img/mattress.jpg" alt="매트리스 바로가기">
-                </span>
-                <div class="txtBox">
-                  <p class="fw_b">MATTRESS</p>
-                  <span>
-                    에르고노믹스 7존 폼 탑퍼로
-                    <br>
-                     더 섬세하고 탄탄하게
-                   </span>
-                </div>
-              </a>
-            </li>
-            <li class="allInOne col-md-3"  data-aos="fade-up" data-aos-duration="2000">
-              <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=products&sca=%EC%9D%BC%EC%B2%B4%ED%98%95">
-                <span class="imgBox">
-                  <img src="/img/allInOne.jpg" alt="일체형 바로가기">
-                </span>
-                <div class="txtBox">
-                  <p class="fw_b">ALL IN ONE</p>
-                  <span>
-                    고무나무 원목으로 흔들림 없이
-                    <br>
-                     안정적인 지지력
-                   </span>
-                </div>
-              </a>
-            </li>
-            <li class="frame col-md-3" data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-out">
-              <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=products&sca=%ED%94%84%EB%A0%88%EC%9E%84">
+          <div class="m-5 m-lg-0 d-inlin-block">
+            <ul class="row">
+              <li class="mattress col-lg-3 text-center mr-lg-5" data-aos="fade-up" data-aos-duration="2000">
+                <a class="d-inline-block" href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=products&sca=%EB%A7%A4%ED%8A%B8%EB%A6%AC%EC%8A%A4">
+                  <span class="imgBox">
+                    <img src="/img/mattress.jpg" alt="매트리스 바로가기">
+                  </span>
+                  <div class="txtBox text-left">
+                    <p class="fw_b">MATTRESS</p>
+                    <span>
+                      에르고노믹스 7존 폼 탑퍼로
+                      <br>
+                       더 섬세하고 탄탄하게
+                     </span>
+                  </div>
+                </a>
+              </li>
+              <li class="allInOne pt-5 pt-lg-0 text-center col-lg-3 mr-lg-5 ml-lg-5" data-aos="fade-up" data-aos-duration="3000">
+                <a class="d-inline-block"  href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=products&sca=%EC%9D%BC%EC%B2%B4%ED%98%95">
+                  <span class="imgBox">
+                    <img src="/img/allInOne.jpg" alt="일체형 바로가기">
+                  </span>
+                  <div class="txtBox text-left">
+                    <p class="fw_b">ALL IN ONE</p>
+                    <span>
+                      고무나무 원목으로 흔들림 없이
+                      <br>
+                       안정적인 지지력
+                     </span>
+                  </div>
+                </a>
+              </li>
+              <li class="frame pt-5 pt-lg-0 text-center col-lg-3 ml-lg-5" data-aos="fade-up" data-aos-duration="2000">
+                <a class="d-inline-block"  href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=products&sca=%ED%94%84%EB%A0%88%EC%9E%84">
                 <span class="imgBox">
                   <img src="/img/frame.jpg" alt="프레임 바로가기">
                 </span>
-                <div class="txtBox">
+                <div class="txtBox text-left">
                   <p class="fw_b">FRAME</p>
                   <span>
                     수면 습관부터 라이프 스타일,
@@ -76,27 +76,26 @@ ety_theme_company 테마 사용
                     침실 인테리어까지
                   </span>
                 </div>
-              </a>
-            </li>
-          </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
   	</div>
   </div>
 
-
 <!-------------------------- 유튜브영상 -------------------------->
-   <!-- 데스크탑 -->
    <div class="container section">
     <div id="vd_d" class="backBg">
     	  <div class="row">
-          <div id="youtube" class="col-md-6">
+          <div id="youtube" class="col-lg-6">
             <div>
               <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7tzxVWWOsN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         		</div>
           </div>
 
-      		<div class="care" data-aos="fade-up" data-aos-duration="3000">
+      		<div class="care mt-5 mt-lg-0" data-aos="fade-up" data-aos-duration="3000">
       		  <h2 class="fw_b">SERVICE</h2>
             <p class="heading fw_b">코웨이 슬립케어 매트리스 케어서비스</p>
             <P class="txt">
@@ -109,22 +108,6 @@ ety_theme_company 테마 사용
     	  </div>
     	</div>
 
-    <!-- 영상 모바일 -->
-    <div id="vd_m" class="backBg mobile_ver section" style="background:#c3c3c3; margin-top:320px;">
-    	<div class="container ">
-      		<div class="care">
-      		  <h2>SERVICE</h2>
-            <p class="heading">코웨이 슬립케어 매트리스 케어서비스</p>
-            <P class="txt">
-                # 홈케어닥터 # 오염도 측정 # UV살균
-            </p>
-            <div class="vdo">
-              <iframe width="900" height="484" src="https://www.youtube.com/embed/7GCGD0yYAYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        		</div>
-            <a class="more" href="//sj926thwjdk.cafe24.com/coway/bbs/content.php?co_id=service">자세히보기</a>
-      		</div>
-    	</div>
-    </div>
   </div>
 
   <!-- 고객 지원 -->
@@ -134,56 +117,27 @@ ety_theme_company 테마 사용
         <h2 class="center-heading fw_b">CUSTOMER SUPPORT</h2>
         <p class="cenTxt">코웨이와 함께하는 고객님께 언제나 최상의 서비스를 제공하겠습니다.</p>
       </div>
-      <ul class="support row">
-        <li class="col-md-2" data-aos="fade-up" data-aos-duration="1000">
-          <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=as">
-            <img src="/img/icon1.png" alt="AS신청">
-            <span>A/S 신청</span>
-          </a>
-        </li>
-        <li class="col-md-2" data-aos="fade-up" data-aos-duration="2000">
-          <a href="//sj926thwjdk.cafe24.com/coway/bbs/qalist.php">
-            <img src="/img/icon2.png" alt="1:1 문의">
-            <span>1:1 문의</span>
-          </a>
-        </li>
-        <li class="col-md-2" data-aos="fade-up" data-aos-duration="3000">
-          <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=payment_change">
-            <img src="/img/icon3.png" alt="납부 방법 변경">
-            <span>납부 방법 변경</span>
-          </a>
-        </li>
-        <li class="col-md-2" data-aos="fade-up" data-aos-duration="3000">
-          <a href="//sj926thwjdk.cafe24.com/coway/bbs/content.php?co_id=notice">
-            <img src="/img/icon4.png" alt="구매 방법">
-            <span>구매 방법</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div id="cus_m" class="customer mobile_ver">
-        <h2 class="center-heading">CUSTOMER SUPPORT</h2>
-        <p class="center-heading">코웨이와 함께하는 고객님께 <br> 언제나  최상의 서비스를 제공하겠습니다.</p>
-        <ul class="support">
-          <li>
+      <div class="m-5 m-lg-0 d-inlin-block">
+        <ul class="support row">
+          <li class="col-lg-2 m-5 rounded-circle" data-aos="fade-up" data-aos-duration="1000">
             <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=as">
               <img src="/img/icon1.png" alt="AS신청">
               <span>A/S 신청</span>
             </a>
           </li>
-          <li>
-            <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=payment_change">
-              <img src="/img/icon3.png" alt="납부 방법 변경">
-              <span>납부 방법 변경</span>
-            </a>
-          </li>
-          <li>
+          <li class="col-lg-2 m-5 rounded-circle" data-aos="fade-up" data-aos-duration="2000">
             <a href="//sj926thwjdk.cafe24.com/coway/bbs/qalist.php">
               <img src="/img/icon2.png" alt="1:1 문의">
               <span>1:1 문의</span>
             </a>
           </li>
-          <li>
+          <li class="col-lg-2 m-5 rounded-circle" data-aos="fade-up" data-aos-duration="3000">
+            <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=payment_change">
+              <img src="/img/icon3.png" alt="납부 방법 변경">
+              <span>납부 방법 변경</span>
+            </a>
+          </li>
+          <li class="col-lg-2 m-5 rounded-circle" data-aos="fade-up" data-aos-duration="3000">
             <a href="//sj926thwjdk.cafe24.com/coway/bbs/content.php?co_id=notice">
               <img src="/img/icon4.png" alt="구매 방법">
               <span>구매 방법</span>
@@ -191,7 +145,9 @@ ety_theme_company 테마 사용
           </li>
         </ul>
       </div>
+    </div>
   </div><!-- /customer -->
+
 
 
 
@@ -212,33 +168,16 @@ ety_theme_company 테마 사용
 
 
 
-    <!-------------------------- app 출시 -------------------------->
-
-    <div id="appStore" class="parallax-window section" data-parallax="scroll">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-12 text-center p-center para-text">
-            <p>코웨이 APP 출시</p>
-    				<h2 class='text-light fw_b'>원하는 시간으로 예약도 <span class="fw_b">간편</span>하게</h2>
-
-    				<button type="button" class="btn btn-outline-light google" onclick='window.open("about:blank").location.href="https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Apr0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-hasem-py-Evergreen-Apr0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700058447516882_creativeid_477192617510_device_c&gclid=EAIaIQobChMI3cr5nue38AIVz1VgCh1h-wDUEAAYASAAEgIOKfD_BwE&gclsrc=aw.ds"'><i class="xi-google-play xi-2x"></i><span>Google Play</span></button>
-            <button type="button" class="btn btn-outline-light" onclick='window.open("about:blank").location.href="https://apps.apple.com/kr/app/apple-store/id375380948"'><i class="xi-apple xi-2x"></i><span>Apple Store</span></button>
-    			</div>
-    		</div>
-    	</div>
-    </div><!-- /parallax -->
 
 
 
 
   <!----------------------------- 이벤트 폼태그 영역 ----------------------->
   <!-- 데스크탑 -->
-  <div id="applay" class="ap_d event_info section">
-    <div data-aos="fade-up" data-aos-duration="2000">
-      <h2 class="fw_b">EVENT</h2>
-      <p class="text-center">무상 1회 체험 후기 남기시고 매트리스 받아가세요</p>
-    </div>
-    <div class="way col-md-8">
+  <div id="applay" class="ap_d event_info" >
+    <h2 class="fw_b">EVENT</h2>
+    <p>무상 1회 체험 후기 남기시고 매트리스 받아가세요</p>
+    <div class="way col-lg-8">
       <div class="how">
         <h3 class="fw_b">참여방법</h3>
         <div class="ap_how">
@@ -272,7 +211,7 @@ ety_theme_company 테마 사용
     </div>
 
     <!-- 체험 신청 -->
-    <div class="user_info"  data-aos="fade-up" data-aos-duration="3000">
+    <div class="user_info" data-aos="fade-up" data-aos-duration="3000">
       <form class="info_txt" action="" method="post">
         <div class="userName useSet">
           <label for="name">이름</label>
@@ -290,8 +229,6 @@ ety_theme_company 테마 사용
           - <input type="text" name="num1" value=""> -
           <input type="text" name="num2" value="">
         </div>
-
-
         <div class="address useSet">
           <label for="num1">주소</label>
             <input  class="ad_txt" type="" name="" value="">
@@ -433,33 +370,42 @@ ety_theme_company 테마 사용
   </div>
 
 
+  <!-------------------------- app 출시 -------------------------->
+
+  <div id="appStore" class="parallax-window section" data-parallax="scroll">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-12 text-center p-center para-text">
+          <p>코웨이 APP 출시</p>
+  				<h2 class='text-light fw_b'>원하는 시간으로 예약도 <span class="fw_b">간편</span>하게</h2>
+
+  				<button type="button" class="btn btn-outline-light google" onclick='window.open("about:blank").location.href="https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Apr0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-hasem-py-Evergreen-Apr0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700058447516882_creativeid_477192617510_device_c&gclid=EAIaIQobChMI3cr5nue38AIVz1VgCh1h-wDUEAAYASAAEgIOKfD_BwE&gclsrc=aw.ds"'><i class="xi-google-play xi-2x"></i><span>Google Play</span></button>
+          <button type="button" class="btn btn-outline-light" onclick='window.open("about:blank").location.href="https://apps.apple.com/kr/app/apple-store/id375380948"'><i class="xi-apple xi-2x"></i><span>Apple Store</span></button>
+  			</div>
+  		</div>
+  	</div>
+  </div><!-- /parallax -->
+
+
   <div class="sns_r section">
-    <div data-aos="fade-up" data-aos-duration="2000">
-      <h3 class="fw_b">SNS</h3>
-      <p class="fw_b text-center">@coway_review</p>
-    </div>
+    <h3 class="fw_b">SNS</h3>
+    <p class="fw_b">@coway_review</p>
     <div class="container">
-      <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-      <script type="text/javascript">
-          var userFeed = new Instafeed({
-          	get: 'user',
-          	target: "instafeed-container",
-          	resolution: 'low_resolution',
-          	accessToken: 'IGQVJXa0FweWlYZAGE5ZAmVnVFdNQndOVHczam5lTjJ6SE5OZAUFWYmgxeGVpMVdSQkh2bWI3dWlLMWVHRWtLYlo3Umdpam50WU9jVWZA5MGo2blA2dzNQNXRzTWxQNUZASa1N4ejJfTTRxTk9fUDdQcVpjNQZDZD'
-          });
-          userFeed.run();
-      </script>
+
 
         <!-- 사진 최신글 { -->
         <?php
+        // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+        // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+        // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
         $options = array();
-        $options['thumb_w'] = 30;
-        $options['thumb_h'] = 30;
-        $options['line']    = 1;
-        $options['design'] = 1;
+        $options['thumb_w'] = 30;    //썸네일( width : 210 )
+        $options['thumb_h'] = 30;    //썸네일( height : 150 )
+        $options['line']    = 1;    //제목+내용 라인수(기본:1)
+        $options['design'] = 1;        //네비디자인(기본 : 1 )
         $options['items'] = 5;
         $options['margin'] = 20;
-        echo latest('/pic_owl.carousel', 'review', 7, 23, '', $options);        // 최소설치시 자동생성되는 갤러리게시판
+        echo latest('pic_owl.carousel', 'review', 7, 23, '', $options);        // 최소설치시 자동생성되는 갤러리게시판
         ?>
         <!-- } 사진 최신글 끝 -->
     </div>
@@ -488,6 +434,8 @@ ety_theme_company 테마 사용
 
     });
   </script>
+
+
 
 
 

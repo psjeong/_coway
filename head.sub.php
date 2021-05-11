@@ -12,7 +12,7 @@ else {
     $g5_head_title = $g5['title']; // 상태바에 표시될 제목
     $g5_head_title .= " | ".$config['cf_title'];
 }
- 
+
 $g5['title'] = strip_tags($g5['title']);
 $g5_head_title = strip_tags($g5_head_title);
 
@@ -68,7 +68,6 @@ var g5_cookie_domain = "<?php echo G5_COOKIE_DOMAIN ?>";
 <script src="<?php echo G5_JS_URL ?>/common.js?ver=<?php echo G5_JS_VER; ?>"></script>
 <script src="<?php echo G5_JS_URL ?>/wrest.js?ver=<?php echo G5_JS_VER; ?>"></script>
 <script src="<?php echo G5_JS_URL ?>/placeholders.min.js"></script>
-<!-- <link rel="stylesheet" href="<?php echo G5_JS_URL ?>/font-awesome/css/font-awesome.min.css"> -->
 	<script src="<?php echo G5_THEME_URL?>/assets/owlcarousel/js/owl.carousel.min.js"></script>
 
 <?php
@@ -101,7 +100,6 @@ if(!defined('G5_IS_ADMIN'))
 <link href="<?php echo G5_THEME_URL?>/css/ety.css?ver=<?php echo time(); ?>" rel="stylesheet">
 <link rel="stylesheet" href="/coway/theme/ety_theme_company/css/sojeong.css?ver=<?php echo time(); ?>">
 <link href="<?php echo G5_THEME_URL?>/css/modern-business.css" rel="stylesheet">
-<link rel="stylesheet" href="/coway/theme/ety_theme_company/fullpage/fullpage.min.css">
 <link rel="stylesheet" href="/dist/aos.css">
 <link rel="stylesheet" href="/coway/theme/ety_theme_company/css/psj_mobile.css?ver=<?php echo time(); ?>">
 

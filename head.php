@@ -5,7 +5,7 @@ if (G5_IS_MOBILE) {
     include_once(G5_THEME_MOBILE_PATH.'/head.php');
     return;
 }
- 
+
 include_once(G5_THEME_PATH.'/head.sub.php');
 include_once(G5_LIB_PATH.'/latest.lib.php');
 include_once(G5_LIB_PATH.'/outlogin.lib.php');
@@ -45,16 +45,17 @@ if(defined('_INDEX_')) {
 <style>
 
 </style>
-<nav class="navbar fixed-top navbar-expand-lg navbar-white fixed-top">
+<nav  class="navbar fixed-top navbar-expand-lg navbar-white fixed-top">
   <div class="container">
-  	<a class="navbar-brand logo logo-box" href="<?php echo G5_URL?>">
-      <img src="/img/coway_logo_white.svg" class="scroll_up" alt="박소정|NCS|코웨이">
-      <img src="/img/coway_logo.svg" class="scroll_down" alt="박소정|NCS|코웨이">
+    <button class="navbar-toggler navbar-dark navbar-toggler-right align-items-stretch" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="xi-bars xi-2x menu_d d-lg-none d-inline-block"></i>
+    </button>
+  	<a class="navbar-brand logo logo-box align-items-stretch" href="<?php echo G5_URL?>">
+      <img src="/img/coway_logo_white.svg" class="scroll_up scroll_up_d align-middle" alt="박소정|NCS|코웨이">
+      <img src="/img/coway_logo_white.svg" class="scroll_up_m  d-lg-none align-middle" alt="박소정|NCS|코웨이">
+      <img src="/img/coway_logo.svg" class="scroll_down  align-middle" alt="박소정|NCS|코웨이">
     </a>
-  	<button class="navbar-toggler navbar-dark navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-  	  <i class="xi-bars xi-3x menu_d"></i>
-      <i class="xi-bars xi-3x menu_m"></i>
-  	</button>
+
   	<div class="collapse navbar-collapse" id="navbarResponsive" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInRight">
   	  <ul class="navbar-nav ml-auto">
     		<?php
@@ -143,7 +144,7 @@ if(defined('_INDEX_')) {
     	  </ul>
       </div>
 
-      <div id="loginDiv">
+      <div id="loginDiv" class="align-items-stretch">
         <ul>
         <?php if($is_member) { ?>
           <li><a href="<?php echo G5_URL?>/bbs/logout.php"><i class="xi-user xi-2x"></i></a></li>
