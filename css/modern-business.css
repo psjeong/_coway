@@ -465,8 +465,22 @@ footer
 	.navbar-nav li {
 		padding: 5px 0 5px 10px;
 	}
+/*
+  .newBox li {margin:0 auto;} */
+
+
+
 
 }
+
+/* @media (min-width: 992px){
+.navbar-expand-lg .navbar-toggler {display: block;}
+.navbar-expand-lg .navbar-nav .nav-link {padding-right: .5rem;padding-left: .5rem;}
+
+
+
+} */
+
 
 /* 태블릿 */
 @media only screen and (min-width: 769px) and (max-width: 1200px){

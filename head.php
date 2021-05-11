@@ -39,24 +39,11 @@ if(defined('_INDEX_')) {
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-<!-------------------------- 수정해서 사용하세욧 -------------------------->
-<meta name="description" content="무료테마, 에티무료테마, 무료반응형홈페이지">
-<meta property="og:type" content="website">
-<meta property="og:title" content="무료테마 에티테마">
-<meta property="og:description" content="반응형홈페이지제작, 무료커뮤니티제작, 에티테마, 그누보드 무료 테마, 무료 반응형 커뮤니티">
-<meta property="og:image" content="http://company.ety.kr/theme/ety_theme_company/img/logo.png">
-<meta property="og:url" content="http://company.ety.kr/">
-<!-------------------------- ./수정해서 사용하세요 -------------------------->
-
 
 <!-------------------------- 네비게이션 -------------------------->
 
 <style>
-.collapse.in{
-    -webkit-transition-delay: 4s;
-    transition-delay: 5s;
-    visibility: visible;
-}
+
 </style>
 <nav class="navbar fixed-top navbar-expand-lg navbar-white fixed-top">
   <div class="container">
@@ -65,7 +52,7 @@ if(defined('_INDEX_')) {
       <img src="/img/coway_logo.svg" class="scroll_down" alt="박소정|NCS|코웨이">
     </a>
   	<button class="navbar-toggler navbar-dark navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-  	  <!-- <i class="xi-bars xi-3x menu_d"></i> -->
+  	  <i class="xi-bars xi-3x menu_d"></i>
       <i class="xi-bars xi-3x menu_m"></i>
   	</button>
   	<div class="collapse navbar-collapse" id="navbarResponsive" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInRight">
@@ -112,7 +99,7 @@ if(defined('_INDEX_')) {
     							if( empty($row2) ) continue;
 
     							?>
-    							<a class="dropdown-item f15 fw4" href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a>
+    							<a class="dropdown-item ko1 f15 fw4" href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a>
 
     							<?php
     							$k++;

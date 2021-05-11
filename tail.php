@@ -8,27 +8,6 @@ if (G5_IS_MOBILE) {
 ?>
 
 
-	<?php
-
-		// left_menu.php 에서 추가된 모든 게시판+페이지를 추가해주셔야 합니다.
-
-		if($bo_table == 'notice' ||
-		$bo_table == 'free' ||
-		$bo_table == 'free_responsive' ||
-		$bo_table == 'free_scroll' ||
-		$pagename == "product-2.php" ||
-		$pagename == "pages-1.php" ||
-		$pagename == "pages-2.php"
-		){
-	?>
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-
-	<?php }?>
-
-
-
     <footer class="ft_bg">
   		<div id="ft_d" class=" footer">
         <div class="ft_txt">
@@ -52,37 +31,40 @@ if (G5_IS_MOBILE) {
           </div><!-- .container -->
         </div>
         <div class="container ft_under">
-    				<div class="text-left ft_I">
+    				<div class="text-left d-lg-flex ft_I  justify-content-between">
     					<h2>
                 <a href="#">
                   <img src="/img/bottom_logo.png" alt="코웨이 하단 로고">
                 </a>
               </h2><!-- image or text  -->
-              <div class="ft_T">
+              <div class="ft_T ml-0 ml-lg-5">
                 <p>
                   이 페이지는 포토폴리오제작으로 '코웨이'와는 관련 없음을 알립니다.
                 </p>
       					<p>
       						 본사 : 서울특별시 구로구 디지털로26길 38(구로동) G-Tower 코웨이 15층~20층 <br />
       						 사업장 주소 : 충남 공주시 유구읍 유구마곡사로 136-23<br />
-      						 <a href="http://sj926thwjdk.dothome.co.kr">대표이사 : 박소정</a><br />
+      						 <a href="//sj926thwjdk.cafe24.com">대표이사 : 박소정</a><br />
       					</p>
               </div>
-              <div class="call">
-                <dl class="text-right">
-                  <dt>고객콜센터</dt>
-                  <dd class="num fw_b">1588-5200</dd>
-                  <dd class="time">
-                      평일 AM 9:00 ~ PM 6:00 <br>
-                      토요일 AM 9:00 ~ PM 2:00 <br>
-                      공휴일/일요일 AM 9:00 ~ PM 4:00 <br>
-                  </dd>
-                </dl>
+              <div class="d-block text-center mb-3">
+                <div class="call">
+                  <dl class="text-right">
+                    <dt>고객콜센터</dt>
+                    <dd class="num fw_b">1588-5200</dd>
+                    <dd class="time">
+                        평일 AM 9:00 ~ PM 6:00 <br>
+                        토요일 AM 9:00 ~ PM 2:00 <br>
+                        공휴일/일요일 AM 9:00 ~ PM 4:00 <br>
+                    </dd>
+                  </dl>
+                </div>
               </div>
+
     				</div>
         </div><!-- container-->
-        <div class="col-md-12 text-center copy">
-    				Copyright &copy; <a href="http://sj926thwjdk.dothome.co.kr" target="_blank"><span>NCS 과정 | 박소정의 포토폴리오</span></a>
+        <div class="col-md-12 mt-5 text-center copy">
+    				Copyright &copy; <a href="//sj926thwjdk.cafe24.com" target="_blank"><span>NCS 과정 | 박소정의 포토폴리오</span></a>
     		</div>
   		</div><!--/container-->
       <div id="ft_m" class=" footer mobile_ver">
@@ -151,7 +133,7 @@ if (G5_IS_MOBILE) {
     <!--<script src="vendor/jquery/jquery.min.js"></script>-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script>
-	var jQuery = $.noConflict(true);
+	   var jQuery = $.noConflict(true);
 	</script>
   <script src="<?php echo G5_THEME_URL?>/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="<?php echo G5_THEME_URL?>/assets/parallax/js/parallax.min.js"></script>
@@ -160,7 +142,7 @@ if (G5_IS_MOBILE) {
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/assets/countdown/js/kinetic.js"></script>
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/assets/countdown/js/jquery.final-countdown.js"></script>
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/js/bootstrap-dropdownhover.js"></script>
-  <script type="text/javascript" src="<?php echo G5_THEME_URL?>/fullpage/fullpage.min.js"></script>
+  <script src="/dist/aos.js"></script>
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/js/custom.js"></script>
 	<!-- <script>
 		$('.carousel').carousel({ interval: 1000 });
