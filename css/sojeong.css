@@ -4,7 +4,7 @@
 @media (min-width:992px) {
   * .container {max-width:1310px}
 }
-
+ 
 
 .collapse.in{
     -webkit-transition-delay: 4s;

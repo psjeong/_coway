@@ -6,7 +6,7 @@ if (G5_IS_MOBILE) {
     return;
 }
 ?>
-
+ 
 
 <!-- 하단 -->
 <footer class="ft_bg">

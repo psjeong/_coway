@@ -16,7 +16,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
-
+ 
 body {
 
 }
@@ -205,7 +205,7 @@ parallax
 **********/
 .parallax-window {
     position: relative;
-    min-height: 350px;
+    min-height: 500px;
     background: #3e3b3b52;
 }
 .para_count {
@@ -398,7 +398,7 @@ footer
 .pro-icon i{font-size:24px;}
 
 .navbar-toggler {
-    background-color: transparent;
+    background-color:transparent;
 }
 
 
@@ -415,7 +415,7 @@ footer
 
 	/* 모바일 1 슬라이드 크기 조절 */
 	.carousel-item {
-	  height: 200px;
+	  height: 200px;;
 	  min-height: 200px;
 	  background: no-repeat center center scroll;
 	  -webkit-background-size: cover;
@@ -432,157 +432,20 @@ footer
 	/*
 	네비
 	**********/
-
-  .footer .ft_txt .ft_info {display: block;}
 	.navbar-brand { font-size:25px; font-weight:bold; }
 	.navbar-nav li {
 		padding: 5px 0 5px 10px;
 	}
 
-  .navbar, .navbar .container,.navbar-nav,.container .newBox,
-  .customer .support,.event_info .user_info,.footer .ft_txt,
-  .footer .ft_info,.footer .row,.footer .ft_I, .container .newBox .pdLeft,
-  .container .newBox .pdLeft, .container .newBox .pdRight
-  {display:block;}
-
-  .navbar .container .logo img {position:absolute;top:15px;left:50%; transform: translateX(-50%);padding:0;}
-  .navbar .container .logo-box {background-color: transparent; padding:0;}
-  .navbar .container .logo .scroll_down {width:100px;}
-  .navbar .container .owl-stage {}
-  .navbar .container .navbar-toggler {position:absolute; left:20px; top:20px;}
-  .navbar .container .navbar-toggler .xi-bars:before {content: "\e91c"; color:#fff}
-  .navbar .container .navbar-toggler .menu_m {display:none;}
-  .navbar .navbar-collapse {position: absolute; top:90px; left:0; right:0; background-color:rgba(0,0,0,0.8)}
-  .navbar #loginDiv .xi-user-o:before {content: "\e9f5";color: #fff; font-size:3rem}
-  .navbar #loginDiv {position:absolute;right:20px;top:23px;}
-  .navbar-nav li {text-align: center;}
-  .navbar-nav .dropdown-menu {text-align: center;}
-  .navbar-nav .login {display:none;}
-
-  .scroll .navbar .container .navbar-toggler .menu_d {display:none;}
-  .scroll .navbar .container .navbar-toggler .menu_m {display:block;}
-  .scroll .navbar .nav-link {color: #fff;font-size: 1.5rem;}
-  .scroll .fixed-top .container .nav-link {color: #fff;}
-  .scroll .fixed-top {background:rgba(0,0,0,0.3)!important;  height:100px}
-  .scroll .container .logo .scroll_down {display: block; width: 150px;padding-top: 25px;}
-  .scroll .fixed-top #loginDiv .xi-user-o::before {content: "\e9f5";color: #fff;}
-
-  /* 슬라이드 */
-  .owl-carousel .owl-nav .owl-prev {display:none;}
-  .owl-carousel .owl-nav .owl-next {display:none;}
-  .owl-carousel .owl-stage-outer .owl-stage {width:100%;}
-
-  /* NEW */
-  #new_d {display: none;}
-  #new_m {display: block; text-align: center;}
-  .container .newBox #new_m .pdTxt {}
-  .container .newBox #new_m .pdTxt h2 {font-size:38px; font-weight:bold}
-  .container .newBox #new_m .pdTxt span {font-size:32px}
-  .container .newBox #new_m .pdTxt p,.container .newBox #new_m .addPd .smallImg span {font-size: 28px}
-  .container .newBox #new_m .bigImg img {width:300px;}
-  .container .newBox #new_m .smallImg img,
-  .container .newBox #new_m .smallImg a {width: 80px;height: 50px;  margin-right: 29px;}
-  .container .newBox #new_m .addPd .smallImg span {font-size:24px;margin:10px -22px;}
-
-  .container .newBox #new_m .pdGo {margin-top: 100px; border:1px solid #222; padding:20px 45px; font-size:28px;}
-
-  /* 동영상 */
-  #vd_d,#vd_m {display:none;}
-  #vd_m320 {display: block;}
-
-  #vd_m .care {text-align: center;}
-  #vd_m .care h2 {font-size:26px;font-weight:bold}
-  #vd_m .care .heading {font-size:26px; margin-top:38px;font-weight:bold}
-  #vd_m .care .txt {margin: 46px 0 72px;font-size:26px}
-  #vd_m .care .more {border:1px solid #222; padding:20px 45px; font-size:28px;}
-
-
-  /* customer support */
-  #cus_d {display:none;}
-  #cus_m {display: block;}
-  #cus_m  h2 {font-size: 26px;}
-  #cus_m .support span {font-size: 18px;}
-  #cus_m  p {font-size:18px;}
-  #cus_m .support {display: flex;}
-  #cus_m .support li {width:170px;}
-  #cus_m .support li span {margin-bottom:100px;}
-  #cus_m .support li a img {width:50px;}
-
-/* 띠배너 */
-.thinBn .app_d,.thinBn .app_m {display:none;}
-.thinBn .app_m320 {display:block;}
-
-
-
-
-  /* 이벤트 */
-  .ap_d, .ap_m {display:none;}
-  .ap_m320 {display:block;}
-  .ap_m320 > h2 {font-size:38px;}
-  .ap_m320 > p {font-size: 28px;}
-
-  .ap_m320 .how h3 {padding:50px 0; font-size:30px;font-weight:bold;}
-  .ap_m320 .how span,.ap_m320 .how strong {text-align:center;font-size: 26px;}
-
-  .ap_m320 .how {background-color:#f0f8fb}
-  .ap_m320 .how .container {width:600px;padding-bottom: 50px;}
-  .ap_m320 .how .step > p {text-align:center;font-size: 26px; font-weight:bold; margin-top: 60px;}
-
-  /* .ap_m .how .step1 img:after {border-bottom:1px solid #555} */
-  .ap_m320 .how .step1 img {width:150px;margin-top: 37px;}
-  .ap_m320 .how .step2 img {width:85px;margin: 37px 0 0 84px;}
-  .ap_m320 .how .step3 img {width:215px;margin: 37px 0 0 32px;}
-
-  .ap_m320 .info_txt {margin-top:50px;}
-  .ap_m320 .info_txt label {font-size:28px;}
-  .ap_m320 .info_txt input {padding:20px 30px 20px 10px;}
-
-
-  /* footer */
-  #ft_d {display:none;}
-  #ft_m {display:block;}
-  #ft_m .ft_info li, #ft_m .ft_info li span {font-size:26px;}
-  #ft_m .footer .ft_txt .ft_info li {margin-right: 0px;}
-
-
-
-
-
-
-
-
-
-  .event_info .applyBtn {margin-left:279px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #quick {display:none;}
-
-  }
+}
 
 /* 모바일기기 + 태블릿 */
 
-@media only screen and (min-width: 321px) and (max-width: 1080px){
+@media only screen and (min-width: 321px) and (max-width: 768px){
 
-  .mainSliderItme.slide0{ background-image:url(http://sj926thwjdk.cafe24.com/img/mobile_bn_sleep.jpg) !important}
-  .mainSliderItme.slide1{ background-image:url(http://sj926thwjdk.cafe24.com/img/mobile_bn_wedding.jpg) !important}
-  .mainSliderItme.slide2{ background-image:url(http://sj926thwjdk.cafe24.com/img/mobile_bn_family.jpg) !important}
 	/* 모바일 2 슬라이드 크기 조절 */
 	.carousel-item {
-	  height: 0px;;
-    padding-bottom:100%;
+	  height: 200px;;
 	  min-height: 200px;
 	  background: no-repeat center center scroll;
 	  -webkit-background-size: cover;
@@ -595,137 +458,29 @@ footer
 	.carousel-caption h3{font-size:16px;}
 	.carousel-caption p{font-size:14px;}
 
-
-
 	/*
 	네비
 	**********/
-  .navbar, .navbar .container,.navbar-nav,.container .newBox,
-  .customer .support,.event_info .user_info,.footer .ft_txt,
-  .footer .ft_info,.footer .row,.footer .ft_I, .container .newBox .pdLeft,
-  .container .newBox .pdLeft, .container .newBox .pdRight
- {display:block;}
-
-  .navbar .container .logo img {position:absolute;top:15px;left:50%; transform: translateX(-50%);padding:0;}
-	.navbar .container .logo-box {background-color: transparent; padding:0;}
-  .navbar .container .owl-stage {}
-  .navbar .container .navbar-toggler {position:absolute; left:20px; top:20px;}
-  .navbar .container .navbar-toggler .xi-bars:before {content: "\e91c"; color:#fff}
-  .navbar .container .navbar-toggler .menu_m {display:none;}
-  .navbar .navbar-collapse {position: absolute; top:90px; left:0; right:0; background-color:rgba(0,0,0,0.8)}
-  .navbar #loginDiv .xi-user-o:before {content: "\e9f5";color: #fff; font-size:3rem}
-  .navbar #loginDiv {position:absolute;right:20px;top:23px;}
-  .navbar-nav li {text-align: center;}
-  .navbar-nav .dropdown-menu {text-align: center;}
-  .navbar-nav .login {display:none;}
-
-  .scroll .navbar .container .navbar-toggler .menu_d {display:none;}
-  .scroll .navbar .container .navbar-toggler .menu_m {display:block;}
-  .scroll .navbar .nav-link {color: #fff;font-size: 1.5rem;}
-  .scroll .fixed-top .container .nav-link {color: #fff;}
-  .scroll .fixed-top {background:rgba(0,0,0,0.3)!important;  height:100px}
-  .scroll .container .logo .scroll_down {display: block; width: 150px;padding-top: 25px;}
-  .scroll .fixed-top #loginDiv .xi-user-o::before {content: "\e9f5";color: #fff;}
-
-/* 슬라이드 */
-  .owl-carousel .owl-nav .owl-prev {display:none;}
-  .owl-carousel .owl-nav .owl-next {display:none;}
-  .owl-carousel .owl-stage-outer .owl-stage {width:100%;}
-
-/* NEW */
-  #new_d {display: none;}
-  #new_m {display: block; text-align: center;}
-  .container .newBox #new_m .pdTxt {}
-  .container .newBox #new_m .pdTxt h2 {font-size:38px; font-weight:bold}
-  .container .newBox #new_m .pdTxt span {font-size:32px}
-  .container .newBox #new_m .pdTxt p,.container .newBox #new_m .addPd .smallImg span {font-size: 28px}
-  .container .newBox #new_m .smallImg img,
-  .container .newBox #new_m .smallImg a {width: 213px;height: 135px;  margin-right: 29px;}
-  .container .newBox #new_m .addPd .smallImg span {margin:10px -22px;}
-
-  .container .newBox #new_m .pdGo {margin-top: 100px; border:1px solid #222; padding:20px 45px; font-size:28px;}
-
-/* 동영상 */
-  #vd_d {display:none;}
-  #vd_m {display: block;}
-
-  #vd_m .care {text-align: center;}
-  #vd_m .care h2 {font-size: 38px;font-weight:bold}
-  #vd_m .care .heading {font-size:32px; font-weight:bold}
-  #vd_m .care .heading {margin-top:38px;}
-  #vd_m .care .txt {margin: 46px 0 72px;font-size: 28px}
-  #vd_m .care .more {border:1px solid #222; padding:20px 45px; font-size:28px;}
-
-
-/* customer support */
-  #cus_d {display:none;}
-  #cus_m {display: block;}
-  #cus_m  h2 {font-size: 38px;}
-  #cus_m .support span {font-size: 32px;}
-  #cus_m  p {font-size:28px;}
-  #cus_m .support {display: flex;}
-  #cus_m .support li {width:300px;}
-  #cus_m .support li span {margin-bottom:100px;}
-  #cus_m .support li a img {width:110px;}
-
-/* 이벤트 */
-  .ap_d {display:none;}
-  .ap_m {display:block;}
-  .ap_m > h2 {font-size:38px;}
-  .ap_m > p {font-size: 28px;}
-
-  .ap_m .how h3 {padding:50px 0; font-size:30px;font-weight:bold;}
-  .ap_m .how span,.ap_m .how strong {font-size: 28px;}
-
-  .ap_m .how {background-color:#f0f8fb}
-  .ap_m .how .container {width:600px;padding-bottom: 50px;}
-  .ap_m .how .step > p {font-size: 28px; font-weight:bold;margin-top: 60px;}
-
-  /* .ap_m .how .step1 img:after {border-bottom:1px solid #555} */
-  .ap_m .how .step1 img {width: 200px;margin: -179px 0 -86px 381px;}
-  .ap_m .how .step2 img {width:100px;margin: -179px 0 -68px 424px;}
-  .ap_m .how .step3 img {width:247px;margin: -179px 0 -14px 353px;}
-
-  .ap_m .info_txt {margin-top:50px;}
-  .ap_m .info_txt label {font-size:28px;}
-  .ap_m .info_txt input {padding:20px 30px 20px 10px;}
-
-
-/* footer */
-  #ft_d {display:none;}
-  #ft_m {display:block;}
-
-  #ft_m .ft_info li, #ft_m .ft_info li span {font-size:26px;}
-  #ft_m .ft_info li {margin:0 42px;}
-  #ft_m .line {width:100%; height:1px; background-color: #ccc}
-  #ft_m {position:relative;}
-  #ft_m #tnb-left {position:absolute;top:80px;right:25px;}
+	.navbar-brand { font-size:25px; font-weight:bold; }
+	.navbar-nav li {
+		padding: 5px 0 5px 10px;
+	}
+/*
+  .newBox li {margin:0 auto;} */
 
 
 
-
-
-
-
-
-  .event_info .applyBtn {margin-left:279px;}
-
-
-
-
-
-
-
-.app_d {width:100%; height:180px;background-color:#b7e5f2;}
-
-
-
-
-
-
-  #quick {display:none;}
 
 }
+
+/* @media (min-width: 992px){
+.navbar-expand-lg .navbar-toggler {display: block;}
+.navbar-expand-lg .navbar-nav .nav-link {padding-right: .5rem;padding-left: .5rem;}
+
+
+
+} */
+
 
 /* 태블릿 */
 @media only screen and (min-width: 769px) and (max-width: 1200px){
