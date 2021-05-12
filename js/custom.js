@@ -1,4 +1,4 @@
-/*
+ /*
 
 http://ety.kr
 
@@ -51,24 +51,27 @@ $(function(){
 });
 
 
-  $(document).ready(function(){
-    /* 슬라이더 - 3칼럼노출 */
-    var slider_column = $('#sliderBanner').owlCarousel({
-      items:1,
-      loop:true,
-      mouseDrag:false,
-      nav:true,
-      autoplay:true,
-      autoplayTimeout:3000,
-      autoplayHoverPause:true,
-      center: false,
-      margin: 10,
-      lazyLoad:true
-    });
-
+$(document).ready(function(){
+  /* 슬라이더 - 3칼럼노출 */
+  var slider_column = $('#sliderBanner').owlCarousel({
+    items:1,
+    loop:true,
+    mouseDrag:false,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: false,
+    margin: 10,
+    lazyLoad:true
   });
 
-  AOS.init({
+});
+
+
+
+//애니메이션
+AOS.init({
   // Global settings:
   disable: false,
   startEvent: 'DOMContentLoaded',
@@ -90,22 +93,32 @@ $(function(){
   // defines which position of the element regarding to window should trigger the animation
 });
 
-// $(function(){
-//
-//     $(window).scroll(function(){
-//      if( $(window).scrollTop() > 0){
-//        $('.page_animate').addClass('animate');
-//      }else{
-//        $('.page_animate').removeClass('animate');
-//      }
-//
-//    });
-//
-// });
 
-// $(window).scroll(function() {
-//    if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-//        $(".page_animate").removeClass("page_animate");
-// 		$(".animate").removeClass("animate");
-//    }
-// });
+$(document).ready(function(){
+  /* 슬라이더 - 3칼럼노출 */
+  var slider_column = $('#sliderBanner').owlCarousel({
+    items:1,
+    loop:true,
+    mouseDrag:false,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: false,
+    margin: 10,
+    lazyLoad:true
+  });
+
+});
+
+
+$(document).ready(function(){
+  $(".open").on('click',function(){
+    $(".popup").show();
+    $(".dim").show();
+  });
+  $(".popup .close").on('click',function(){
+    $(this).parent().hide();
+    $(".dim").hide();
+  })
+});

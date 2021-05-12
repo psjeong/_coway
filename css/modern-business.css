@@ -16,10 +16,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
-
-body {
-
-}
+ .collapse.in{
+     -webkit-transition-delay: 4s;
+     transition-delay: 5s;
+     visibility: visible;
+ }
 
 
 

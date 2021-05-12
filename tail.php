@@ -67,65 +67,6 @@ if (G5_IS_MOBILE) {
     				Copyright &copy; <a href="//sj926thwjdk.cafe24.com" target="_blank"><span>NCS 과정 | 박소정의 포토폴리오</span></a>
     		</div>
   		</div><!--/container-->
-      <div id="ft_m" class=" footer mobile_ver">
-        <div class="ft_txt container">
-          <ul class="ft_info">
-            <li>회사소개</li>
-            <li>이용약관</li>
-            <li><span>개인정보처리방침</span></li>
-          </ul>
-        </div>
-        <div class="line"></div>
-        <div class="ft_txt container">
-          <div id="tnb-left">
-            <!-- social -->
-            <div class="sns_icon">
-            <a href="#" target="_blank"><i class="xi-youtube-play xi-2x"></i></a>
-            </div>
-            <div class="sns_icon">
-            <a href="#"><i class="xi-instagram xi-2x"></i></a>
-            </div>
-            <div class="sns_icon">
-            <a href="#" target="_blank"><i class="xi-facebook xi-2x"></i></a>
-            </div>
-          </div>
-
-    			<div class="row">
-    				<div class="col-md-12 text-left ft_I">
-    					<h2>
-                <a href="#">
-                  <img src="/img/bottom_logo.png" alt="코웨이 하단 로고">
-                </a>
-              </h2><!-- image or text  -->
-              <div class="ft_T">
-                <p>
-                  이 페이지는 포토폴리오제작으로 '코웨이'와는 관련 없음을 알립니다.
-                </p>
-      					<p>
-      						 본사 : 서울특별시 구로구 디지털로26길 38(구로동) G-Tower 코웨이 15층~20층 <br />
-      						 사업장 주소 : 충남 공주시 유구읍 유구마곡사로 136-23<br />
-      						 <a href="http://sj926thwjdk.dothome.co.kr" class="color-white">대표이사 : 박소정</a><br />
-      					</p>
-              </div>
-              <div class="call">
-                <dl class="">
-                  <dt>고객콜센터</dt>
-                  <dd class="num fw_b">1588-5200</dd>
-                  <dd class="time">
-                    평일 AM 9:00 ~ PM 6:00 <br>
-                    토요일 AM 9:00 ~ PM 2:00 <br>
-                    공휴일/일요일 AM 9:00 ~ PM 4:00 <br>
-                  </dd>
-                </dl>
-              </div>
-
-    				</div>
-    			</div>
-          <div class="col-md-12 text-center copy">
-      				Copyright 21_0423 &copy; <a href="http://ety.kr" target="_blank"><span class="color-white">sj926thwjdk</span></a>
-      		</div>
-    		</div><!--/container-->
-      </div>
     </footer>
 
 
