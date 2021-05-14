@@ -42,9 +42,6 @@ if(defined('_INDEX_')) {
 
 <!-------------------------- 네비게이션 -------------------------->
 
-<style>
-
-</style>
 <nav  class="navbar fixed-top navbar-expand-lg navbar-white fixed-top">
   <div class="container">
     <button class="navbar-toggler navbar-dark navbar-toggler-right align-items-stretch" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,7 +141,7 @@ if(defined('_INDEX_')) {
     	  </ul>
       </div>
 
-      <div id="loginDiv" class="align-items-stretch">
+      <div id="loginDiv" class="ml-2 align-items-stretch">
         <ul>
         <?php if($is_member) { ?>
           <li><a href="<?php echo G5_URL?>/bbs/logout.php"><i class="xi-user xi-2x"></i></a></li>

@@ -111,13 +111,15 @@
    transition: 0.5s;
    display:inline-block;
    outline: none;
+	 margin-right:40px;
 }
 .mother .owl-theme .owl-dots .owl-dot.active span{
    width: 80px;
-    background-color:#dfdfdf;
+    background-color:#fff;
+		transition:all 3s;
 }
 .mother .owl-theme .owl-dots .owl-dot span {
-    width: 10px;
+    width: 0px;
     height: 10px;
     margin: 0 5px;
     background-color: #a4a4a4;
@@ -129,22 +131,21 @@
 }
 /* croller의 wrapper*/
 .mother .owl-theme .owl-nav{ position: absolute; z-index: 1000; left:0; right:0; top:50%; height: 0;}
-.mother .owl-carousel .owl-nav button.owl-next,
+/* .mother .owl-carousel .owl-nav button.owl-next,
 .mother .owl-carousel .owl-nav button.owl-prev{
    position: absolute; width:60px; height:60px; border:1px solid #222;
    margin-top: -30px; transform: rotate(-45deg); transform-origin: center;
    background-color:transparent !important;
    outline: none;
- }
+ } */
 .mother .owl-carousel .owl-nav button span{ display: none;}
 /*croller*/
-.mother .owl-carousel .owl-nav button.owl-next{ right: 50px; border-width:0 2px 2px 0}
-.mother .owl-carousel .owl-nav button.owl-prev{ left:50px; border-width:2px 0 0 2px}
+/* .mother .owl-carousel .owl-nav button.owl-next{ right: 50px; border-width:0 2px 2px 0}
+.mother .owl-carousel .owl-nav button.owl-prev{ left:50px; border-width:2px 0 0 2px} */
 
 .mainSliderItme {
 	display:block;
-	height:calc(100vh - 100px);
-	min-height:945px;
+	min-height:850px;
 	position:relative;
 	background-repeat:no-repeat;
 	background-position: center;

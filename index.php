@@ -178,15 +178,15 @@ ety_theme_company테마 사용
               nav:false,
               responsive:{
                 0:{
-                  items:2 // 모바일
+                  items:3 // 모바일
                 },
 
                 600:{
-                  items:2 // 브라우저 600px 이하
+                  items:3 // 브라우저 600px 이하
                 },
 
                 1000:{
-                  items:2 // 브라우저 100px 이하
+                  items:3 // 브라우저 100px 이하
                 }
 
               }
@@ -337,9 +337,15 @@ ety_theme_company테마 사용
     <li><a href="#"><span>전화문의</span></a></li>
   </ul>
   <div class="q_btn">
-    <div class="inquiry">
-      <i calss="xi-plus-thin"></i>
-    </div>
+    <button class="inquiry">
+      <i calss="xi-kakaotalk xi-2x"></i>
+    </button>
+    <button class="inquiry">
+      <i calss="xi-message-o xi-2x"></i>
+    </button>
+    <button class="inquiry">
+      <span class="material-icons-outlined">phone</span>
+    </button>
     <button><a href="#sliderBanner">Top</a></button>
   </div>
 </aside>

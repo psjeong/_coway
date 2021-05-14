@@ -56,11 +56,11 @@ $(document).ready(function(){
   var slider_column = $('#sliderBanner').owlCarousel({
     items:1,
     loop:true,
-    mouseDrag:false,
-    nav:true,
+    mouseDrag:true,
+    nav:false,
     autoplay:true,
     autoplayTimeout:3000,
-    autoplayHoverPause:true,
+    autoplayHoverPause:false,
     center: false,
     margin: 10,
     lazyLoad:true
