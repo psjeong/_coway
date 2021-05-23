@@ -24,7 +24,6 @@ ety_theme_company테마 사용
 <!--------------------------슬라이드 -------------------------->
 <?php echo latest('theme/pic_basic_owl','event',3,100); ?>
 
-
 <!------------------------- NEW 제품 -------------------------->
 
 <div class="newBox section">
@@ -88,7 +87,7 @@ ety_theme_company테마 사용
 <!-------------------------- 유튜브영상 -------------------------->
 <div class="container section">
   <div id="vd_d" class="backBg">
-	  <div class="row">
+	  <div class="row justify-content-between">
       <div id="youtube" class="col-lg-6 mt-lg-0 pl-lg-2">
         <div>
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7tzxVWWOsN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -98,9 +97,9 @@ ety_theme_company테마 사용
   		  <h2 class="fw_b">SERVICE</h2>
         <p class="heading fw_b">코웨이 슬립케어 매트리스 케어서비스</p>
         <P class="txt">
-            코웨이 매트리스 케어서비스는 위생 관리 전문가 '홈케어닥터'가 <br>
-            오염도 측정부터 UV살균까지 전문 장비를 활용해 매트리스를 깐깐하게 <br>
-            관리해 드리는 서비스입니다.
+            코웨이 매트리스 케어서비스는 위생 관리 전문가<br>
+            '홈케어닥터'가 오염도 측정부터 UV살균까지 전문 장비를 활용해 <br>
+            매트리스를 깐깐하게 관리해 드리는 서비스입니다.
         </p>
         <a href="//sj926thwjdk.cafe24.com/coway/bbs/content.php?co_id=service">자세히보기  <i class="xi-long-arrow-right"></i></a>
   		</div>
@@ -146,7 +145,7 @@ ety_theme_company테마 사용
             </div>
           </div>
           <div class="a_btn">
-            <a href="#a" class="open">신청하기</a>
+            <a href="#evtPopup" class="open">신청하기</a>
           </div>
         </div>
       </div>
@@ -198,12 +197,12 @@ ety_theme_company테마 사용
 
 
 <!---------------------------- 이벤트 폼태그 팝업 ------------------------------->
-<div class="popup">
+<div id="evtPopup" class="popup">
   <h2 class="fw_b">1회 무료 체험 신청</h2>
   <div class="con">
     <table class="apy_free">
-      <caption>
-        <details class="sound_only">
+      <caption class="sound_only">
+        <details >
           <summary>무료 체험 신청</summary>
           <div>이름, 전화번호, 주소, 연락 희망 시간대, 케어서비스 요청일</div>
         </details>
@@ -272,7 +271,7 @@ ety_theme_company테마 사용
   </div>
   <a href="#onclick" class="close"><i class="xi-close-thin xi-2x "></i></a>
 </div>
-<div class="dim"></div>
+<div class="dim"></div><!-- 팝업 뒤 전테 배경 -->
 
 
 <!----------------------------- 고객 지원 --------------------------------------->
@@ -331,22 +330,22 @@ ety_theme_company테마 사용
 
 <!------------------------------- 퀙메뉴 --------------------------------------->
 <aside id="quick">
-  <ul class="q_memu">
+  <!-- <ul class="q_memu">
     <li><a href="#"><span>카카오톡</span></a></li>
     <li><a href="#"><span>1:1 문의</span></a></li>
     <li><a href="#"><span>전화문의</span></a></li>
-  </ul>
+  </ul> -->
   <div class="q_btn">
-    <button class="inquiry">
-      <i calss="xi-kakaotalk xi-2x"></i>
-    </button>
-    <button class="inquiry">
-      <i calss="xi-message-o xi-2x"></i>
-    </button>
-    <button class="inquiry">
-      <span class="material-icons-outlined">phone</span>
-    </button>
-    <button><a href="#sliderBanner">Top</a></button>
+    <div class="pluxBox">
+      <button class="inquiry">
+        <a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><span class="xi-kakaotalk xi-2x"></span></a>
+      </button>
+      <button class="inquiry">
+        <a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><span class="xi-call"></span></a>
+      </button>
+    </div>
+    <button type="button" name="button" id="quickPlusBtn"><i class="xi-plus-thin"></i></button>
+    <button><a onclick="$('html,body').animate({scrollTop:0},'slow')" class="move"  href="#sliderBanner">Top</a></button>
   </div>
 </aside>
 

@@ -19,16 +19,16 @@ if (G5_IS_MOBILE) {
             </ul>
             <div id="tnb-left">
               <div class="sns_icon">
-                <a href="#" target="_blank"><i class="xi-youtube-play xi-2x"></i></a>
+                <a href="//www.youtube.com/user/cowaystory" target="_blank"><i class="xi-youtube-play xi-2x"></i></a>
               </div>
               <div class="sns_icon">
-                <a href="#"><i class="xi-instagram xi-2x"></i></a>
+                <a href="//www.instagram.com/coway.kr/"><i class="xi-instagram xi-2x"></i></a>
               </div>
               <div class="sns_icon">
-                <a href="#" target="_blank"><i class="xi-facebook xi-2x"></i></a>
+                <a href="//ko-kr.facebook.com/usacoway/" target="_blank"><i class="xi-facebook xi-2x"></i></a>
               </div>
             </div>
-          </div><!-- .container -->
+          </div><!-- /.container -->
         </div>
         <div class="container ft_under">
     				<div class="text-left d-lg-flex ft_I  justify-content-between">
@@ -36,7 +36,7 @@ if (G5_IS_MOBILE) {
                 <a href="#">
                   <img src="/img/bottom_logo.png" alt="코웨이 하단 로고">
                 </a>
-              </h2><!-- image or text  -->
+              </h2>
               <div class="ft_T ml-0 ml-lg-5">
                 <p>
                   이 페이지는 포토폴리오제작으로 '코웨이'와는 관련 없음을 알립니다.
@@ -60,18 +60,17 @@ if (G5_IS_MOBILE) {
                   </dl>
                 </div>
               </div>
-
     				</div>
-        </div><!-- container-->
+        </div><!-- /.container-->
         <div class="col-md-12 mt-5 text-center copy">
     				Copyright &copy; <a href="//sj926thwjdk.cafe24.com" target="_blank"><span>NCS 과정 | 박소정의 포토폴리오</span></a>
     		</div>
-  		</div><!--/container-->
+  		</div><!--/.footer-->
     </footer>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+  <!-- Bootstrap core JavaScript -->
+  <!--<script src="vendor/jquery/jquery.min.js"></script>-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script>
 	   var jQuery = $.noConflict(true);
@@ -83,13 +82,11 @@ if (G5_IS_MOBILE) {
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/assets/countdown/js/kinetic.js"></script>
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/assets/countdown/js/jquery.final-countdown.js"></script>
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/js/bootstrap-dropdownhover.js"></script>
-  <script src="/dist/aos.js"></script>
+  <script type="text/javascript" src="/vendor/aos/aos.js?ver=2.3.1"></script>
 	<script type="text/javascript" src="<?php echo G5_THEME_URL?>/js/custom.js"></script>
-	<!-- <script>
-		$('.carousel').carousel({ interval: 1000 });
-	</script> -->
+
+
 	<script>
-		// parallax-window 이미지를 수정해주세요.
 		jQuery('.parallax-window').parallax({imageSrc: '/img/coway_app.jpg'});
 	</script>
 	<script>
@@ -119,7 +116,6 @@ if ($config['cf_analytics']) {
 
 <script>
 $(function() {
-    // 폰트 리사이즈 쿠키있으면 실행
     font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
 });
 </script>

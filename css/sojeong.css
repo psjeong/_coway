@@ -3,6 +3,8 @@
 * {font-family: 'S-CoreDream-3Light',sans-serif;font-size:16px;}
 body {background-color:#f9f9f9}
 
+
+
 /* sj 폰트스타일 */
 .font_s {font-family: 'S-CoreDream-3Light',sans-serif;}
 .fw_b {font-weight: bold;}
@@ -15,16 +17,16 @@ body {background-color:#f9f9f9}
 
 /* 슬라이드 */
 .mainSliderTitle {display:none;}
+#sliderBanner {position:relative;}
 
 
 
 /* quick */
 .scroll #quick {
   position:fixed;
-  right:100px; bottom:10%;
+  right:45px; bottom:50px;
   z-index:100000;
   text-align: center;
-
   }
 
 .scroll #quick .desk li {
@@ -34,18 +36,23 @@ body {background-color:#f9f9f9}
   border-radius:4px;
   text-align:left;
 }
-.scroll #quick:active{}
+#quickPlusBtn {display:block;margin-bottom:10px;transition:transform 0.5s;}
+#quickPlusBtn i {line-height: 2;font-size: 25px; }
+.scroll #quick .pluxBox {display:none;}
+.scroll #quick .pluxBox.open {display: block;}
+.scroll #quick .pluxBox.open + #quickPlusBtn {transform: rotate(135deg);transition: all 0.5s;}
+
 .scroll #quick li {display:none;}
 .scroll #quick .desk li:hover {margin-left:-50px;}
 
-.scroll #quick button {width:50px; height:50px; background-color:#f9f9f9; color:#222; border-radius: 50%; border:1px solid #222;}
-.scroll #quick button a {padding: 15px 10px;}
-
-.scroll #quick .q_btn .inquiry {display:block;  margin-bottom:10px;width:50px; height:50px;background-color:transparent; color:#222; border-radius: 50%; border:1px solid #222; }
-.scroll #quick .q_btn .inquiry a {width:50px;height:50px;}
+.scroll #quick button {width:50px; height:50px; background-color:#f9f9f9; color:#222; outline:none; border-radius: 50%; border:1px solid #222;}
 
 
+.scroll #quick .q_btn .inquiry {display:block;  margin-bottom:10px;width:50px; height:50px;background-color:#f9f9f9; color:#222; border-radius: 50%; border:1px solid #222; }
+.scroll #quick .q_btn .inquiry a {display: block; color:#222; text-align:center; width:50px;}
 
+.xi-call:before {content: "\e9d3"; font-size:25px; line-height: 50px}
+.move{transition: all 0.3s;}
 
 /* nav - 메뉴 */
 .navbar {padding-top: 0px;} /* navbar 위쪽 패딩 없애기 */
@@ -64,6 +71,17 @@ body {background-color:#f9f9f9}
 .navbar #loginDiv ul {margin-bottom: 0;}
 .navbar #loginDiv .xi-user:before {content: "\e9f3"; color: #fff;padding-left:3px;}
 .navbar #loginDiv .xi-user-o:before {content: "\e9f5"; color: #fff;}
+
+
+
+
+/* 로그인 아이콘 */
+.navbar #loginDiv .signIn,.navbar #loginDiv .signOut {display:none;}
+.navbar #loginDiv li:hover .signIn, .navbar #loginDiv li:hover .signOut {display:block;}
+.navbar #loginDiv li {position:relative; }
+.navbar #loginDiv li a {font-size: 14px;}
+.navbar #loginDiv .sign {padding: 10px; width: 50px; height: 50px; text-align: center;}
+.navbar #loginDiv .signBox {position:absolute; top:45px; left:-15px; background-color:#fff; border:1px solid #ddd;}
 
 
 /* 스크롤 동작시 실행 */
@@ -93,9 +111,9 @@ body {background-color:#f9f9f9}
 
 
 /* youtube */
-#youtube > div {position:relative; height:0; padding-bottom:56%}
+#youtube > div {position:relative; height:0; padding-bottom:56%;width: 600px;height: 400px;}
 #youtube iframe {position:absolute; left:0; right:0; top:0; z-index:10; margin-right:20px;}
-#youtube::after {content:''; display:block; position:absolute; top:70px; left:80px; margin-right:20px; width:90%; height:90%; border:1px solid #a99284}
+#youtube::after {content:''; display:block; position:absolute; top:28px; left:62px; margin-right:20px; width:100%; height:100%; border:1px solid #a99284}
 
 #vd_d {padding:200px 0;}
 #vd_d .care {padding-top:50px;margin-left: 146px;}
@@ -141,29 +159,6 @@ body {background-color:#f9f9f9}
 .ap_how {display:flex;}
 .ap_how img {margin-top:55px;}
 
-/* .user_info .useSet {margin-bottom:10px;}
-
-.user_info .userName label {margin-right:130px;}
-.user_info .phonNum label{margin-right:95px;}
-.user_info .address label {margin-right:133px;}
-.user_info .whishTime label {margin-right:43px;}
-.user_info .careService label {margin-right:33px;}
-
-
-.user_info input,.user_info select,.user_info button {padding:5px; border-radius:10px;  border-style: none;vertical-align: middle; outline:none;}
-.user_info label {margin-bottom:0}
-
-.user_info .phonNum input,.user_info .phonNum select {width:100px;}
-.user_info .address .ad_txt1 {width:334px; margin-left: 171px; margin-top: 10px;}
-
-
-
-.agree > p ,.cBtn span {font-size: 12px;}
-.agree .ag {padding:25px 0 10px; margin-bottom: 0}
-.agree .ag_txt {padding:10px;border:1px solid #fff; border-radius:5px;}
-.cBtn {width:100%; text-align: right; margin-top: -13px;}
-.cBtn span {text-align: right;}
-#applay button.applyBtn {background-color:#f3f3f3; padding:15px 0; color:#222; text-align: center; width: 100%; margin-top: 30px;} */
 .step3 {z-index:10}
 .left {background-color:#eee }
 .left:after {
@@ -208,7 +203,7 @@ label {margin-bottom:0;}
 
 .popup .ads + button {margin:-6px 0 0 5px;}
 
-
+.apy_free caption {text-indent: -9999px;}
 
 
 
@@ -262,6 +257,8 @@ label {margin-bottom:0;}
   .item .slider0 {background-image:url(/img/mobile_bn_wedding.jpg)!important;}
   .item .slider1 {background-image:url(/img/mobile_bn_family.jpg)!important;}
   .item .slider2 {background-image:url(/img/mobile_bn_sleep.jpg)!important;}
+  .mother .owl-theme .owl-dots {display:none}
+
 
   .collapse.show {position:absolute;top:65px;left:0;width:100%;text-align: center;background-color:rgba(0,0,0,0.5)}
   .navbar-collapse {flex-basis:0;flex-grow: 0;align-items: normal;}

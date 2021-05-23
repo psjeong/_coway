@@ -102,32 +102,36 @@
 
 .mother .owl-theme .owl-dots{
    position: absolute;
-    left:0; right:0; bottom:15px;
+    left:-419px; right:0; bottom:204px;
     z-index: 10000;
     text-align: center;
 }
+.mother .owl-theme .owl-dots .owl-dot:after {
+	content: ''; display: block;
+	width: 80px; height: 3px;
+	background-color: rgb(255 255 255 / 23%);
+	position:absolute; left:7px; bottom:5px;
+	z-index: -1;
+}
 .mother .owl-theme .owl-dots .owl-dot{
+	position:relative;
    background-color:transparent;
-   transition: 0.5s;
-   display:inline-block;
+	 width:80px;
    outline: none;
-	 margin-right:40px;
 }
 .mother .owl-theme .owl-dots .owl-dot.active span{
    width: 80px;
     background-color:#fff;
-		transition:all 3s;
+		transition:width 5s linear;
 }
 .mother .owl-theme .owl-dots .owl-dot span {
     width: 0px;
-    height: 10px;
-    margin: 0 5px;
-    background-color: #a4a4a4;
-      opacity: 1;
-    display: block;
+    height: 3px;
+    /* background-color: #fff;
+    opacity: 1; */
     -webkit-backface-visibility: visible;
-    transition: .2s ease;
-    border-radius: 30px;
+    border-radius: 0;
+		transition:unset
 }
 /* croller의 wrapper*/
 .mother .owl-theme .owl-nav{ position: absolute; z-index: 1000; left:0; right:0; top:50%; height: 0;}

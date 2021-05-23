@@ -144,11 +144,27 @@ if(defined('_INDEX_')) {
       <div id="loginDiv" class="ml-2 align-items-stretch">
         <ul>
         <?php if($is_member) { ?>
-          <li><a href="<?php echo G5_URL?>/bbs/logout.php"><i class="xi-user xi-2x"></i></a></li>
+          <li class="sign">
+            <a href="<?php echo G5_URL?>/bbs/logout.php">
+              <i class="xi-user xi-2x"></i>
+              <ul class="signBox signIn">
+                <li><a class="dropdown-item" href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
+                <li><a class="dropdown-item" href="<?php echo G5_URL?>/bbs/logout.php">로그아웃</a></li>
+              </ul>
+            </a>
+          </li>
           <!-- <li><a href="<?//php echo G5_BBS_URL ?>/member_confirm.php?url=<?//php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li> -->
         <?php }else{ ?>
           <!-- <li><a href="<?//php echo G5_URL?>/bbs/register.php"><i class="fa fa-user-plus" aria-hidden="true"></i> 회원가입</a></li> -->
-          <li><a href="<?php echo G5_URL?>/bbs/login.php"><i class="xi-user-o xi-2x"></i></a></li>
+          <li class="sign">
+            <a href="<?php echo G5_URL?>/bbs/login.php">
+              <i class="xi-user-o xi-2x"></i>
+              <ul class="signBox signOut">
+                <li><a class="dropdown-item" href="<?php echo G5_URL?>/bbs/login.php">로그인</a></li>
+                <li><a class="dropdown-item" href="<?php echo G5_URL?>/bbs/register.php">회원가입</a></li>
+              </ul>
+            </a>
+          </li>
         <?//php }?>
           <!-- <li><a href="<?//php echo G5_URL?>/bbs/faq.php"><i class="fa fa-question" aria-hidden="true"></i> <span>FAQ</span></a></li>
           <li><a href="<?//php echo G5_URL?>/bbs/qalist.php"><i class="fa fa-comments" aria-hidden="true"></i> <span>1:1문의</span></a></li>

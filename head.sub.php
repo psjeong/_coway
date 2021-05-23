@@ -101,7 +101,7 @@ if(!defined('G5_IS_ADMIN'))
 <link href="<?php echo G5_THEME_URL?>/css/ety.css?ver=<?php echo time(); ?>" rel="stylesheet">
 <link rel="stylesheet" href="/coway/theme/ety_theme_company/css/sojeong.css?ver=<?php echo time(); ?>">
 <link href="<?php echo G5_THEME_URL?>/css/modern-business.css" rel="stylesheet">
-<link rel="stylesheet" href="/dist/aos.css">
+<link rel="stylesheet" href="/vendor/aos/aos.css?ver=2.3.1">
 <link rel="stylesheet" href="/coway/theme/ety_theme_company/css/psj_mobile.css?ver=<?php echo time(); ?>">
 
 </head>

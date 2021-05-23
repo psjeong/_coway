@@ -37,6 +37,10 @@ $(function() {
 
 });
 */
+$("#quickPlusBtn").click(function(){
+  $('.pluxBox').toggleClass('open');
+});
+
 $(function(){
 
     $(window).scroll(function(){
@@ -59,7 +63,7 @@ $(document).ready(function(){
     mouseDrag:true,
     nav:false,
     autoplay:true,
-    autoplayTimeout:3000,
+    autoplayTimeout:5000,
     autoplayHoverPause:false,
     center: false,
     margin: 10,
@@ -68,6 +72,17 @@ $(document).ready(function(){
 
 });
 
+
+$(document).ready(function(){
+  $(".open").on('click',function(){
+    $(".popup").show();
+    $(".dim").show();
+  });
+  $(".popup .close").on('click',function(){
+    $(this).parent().hide();
+    $(".dim").hide();
+  })
+});
 
 
 //애니메이션
@@ -94,31 +109,7 @@ AOS.init({
 });
 
 
-$(document).ready(function(){
-  /* 슬라이더 - 3칼럼노출 */
-  var slider_column = $('#sliderBanner').owlCarousel({
-    items:1,
-    loop:true,
-    mouseDrag:false,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    center: false,
-    margin: 10,
-    lazyLoad:true
-  });
 
-});
-
-
-$(document).ready(function(){
-  $(".open").on('click',function(){
-    $(".popup").show();
-    $(".dim").show();
-  });
-  $(".popup .close").on('click',function(){
-    $(this).parent().hide();
-    $(".dim").hide();
-  })
-});
+// $(".searchBg .close").click(function(){
+//   $('.searchBg').removeClass('up');
+// });
