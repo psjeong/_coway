@@ -19,10 +19,10 @@ ety_theme_company테마 사용
 
 
 
-
-
 <!--------------------------슬라이드 -------------------------->
-<?php echo latest('theme/pic_basic_owl','event',3,100); ?>
+<div class="slider">
+  <?php echo latest('theme/pic_basic_owl','event',3,100); ?>
+</div>
 
 <!------------------------- NEW 제품 -------------------------->
 
@@ -30,9 +30,9 @@ ety_theme_company테마 사용
 	<div class="container">
     <div class="products row p-0 m-0" >
       <h2 class="font_s fw_b" data-aos="fade-up" data-aos-duration="1000">PRODUCTS</h2>
-      <div class="m-5 m-lg-0 d-inlin-block">
+      <div class="m-3 m-lg-0 d-inlin-block">
         <ul class="row">
-          <li class="mattress col-lg-3 text-center mr-lg-5" data-aos="fade-up" data-aos-duration="2000">
+          <li class="mattress col-lg-3 col-md-3 text-center mr-lg-5" data-aos="fade-up" data-aos-duration="2000">
             <a class="d-inline-block shadow" href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=products&sca=%EB%A7%A4%ED%8A%B8%EB%A6%AC%EC%8A%A4">
               <span class="imgBox">
                 <img src="/img/mattress.jpg" alt="매트리스 바로가기">
@@ -93,7 +93,7 @@ ety_theme_company테마 사용
           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7tzxVWWOsN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     		</div>
       </div>
-  		<div class="care mt-5 mt-lg-0  ml-lg-5 pl-lg-4" data-aos="fade-up" data-aos-duration="1000">
+  		<div class="care mt-5 mt-lg-0  ml-lg-5 ml-4 pl-lg-4" data-aos="fade-up" data-aos-duration="1000">
   		  <h2 class="fw_b">SERVICE</h2>
         <p class="heading fw_b">코웨이 슬립케어 매트리스 케어서비스</p>
         <P class="txt">
@@ -114,7 +114,7 @@ ety_theme_company테마 사용
     <div class="left col-lg-7 pt-5 p-0"  data-aos="fade-up" data-aos-duration="1000">
       <div class="account">
         <div class="way">
-          <div class="how p-5">
+          <div class="how p-lg-5">
             <h3 class="fw_b pb-5">EVENT 참여방법</h3>
             <div class="ap_how pt-3">
               <div class="step step1 col-4">
@@ -123,7 +123,7 @@ ety_theme_company테마 사용
                   코웨이 슬립케어 매트리스 <br>
                   <strong>무상케어서비스 신청</strong>하기
                 </span>
-                <img src="/img/applay_btn.png" alt="신청하기이미지">
+                <img src="/img/applay_btn.png" alt="신청하기이미지"  class="step1Img">
               </div>
               <div class="step step2 col-4">
                 <p>STEP 02</p>
@@ -131,7 +131,7 @@ ety_theme_company테마 사용
                   케어서비스 체험하며 <br>
                   <strong>후기 인증샷</strong>찍기
                 </span>
-                <img src="/img/img.png" alt="이미지">
+                <img src="/img/img.png" alt="이미지" class="step2Img">
               </div>
               <div class="step step3 col-4">
                 <p>STEP 03</p>
@@ -140,7 +140,7 @@ ety_theme_company테마 사용
                   <strong>개인 SNS에 후기</strong>남기고 <br>
                   <strong>이벤트 응모</strong>하기
                 </span>
-                <img src="/img/txt.png" alt="이미지">
+                <img src="/img/txt.png" alt="이미지" class="step3Img">
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@ ety_theme_company테마 사용
           </td>
         </tr>
         <tr>
-          <th><label for="careSvc">케어서비스 요청일</label></th>
+          <th class="callDay"><label for="careSvc">케어서비스 요청일</label></th>
           <td><input type="text" id="careSvc" placeholder="6자리 입력 예)201231"></td>
         </tr>
       </tbody>
@@ -286,25 +286,25 @@ ety_theme_company테마 사용
         <li class="col-lg-2 mr-lg-5 m-5 rounded-circle" data-aos="fade-up" data-aos-duration="1000">
           <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=as">
             <img src="/img/icon1.png" alt="AS신청">
-            <span>A/S 신청</span>
+            <span><a href="http://sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=as">A/S 신청</a></span>
           </a>
         </li>
         <li class="col-lg-2 mx-lg-5 m-5 rounded-circle" data-aos="fade-up" data-aos-duration="1000">
           <a href="//sj926thwjdk.cafe24.com/coway/bbs/qalist.php">
             <img src="/img/icon2.png" alt="1:1 문의">
-            <span>1:1 문의</span>
+            <span><a href="http://sj926thwjdk.cafe24.com/coway/bbs/qalist.php">1:1 문의</a></span>
           </a>
         </li>
         <li class="col-lg-2 mx-lg-5 m-5 rounded-circle" data-aos="fade-up" data-aos-duration="1000">
           <a href="//sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=payment_change">
             <img src="/img/icon3.png" alt="납부 방법 변경">
-            <span>납부 방법 변경</span>
+            <span><a href="http://sj926thwjdk.cafe24.com/coway/bbs/board.php?bo_table=payment_change">납부 방법 변경</a></span>
           </a>
         </li>
         <li class="col-lg-2 ml-lg-5 mt-5 ml-5 rounded-circle" data-aos="fade-up" data-aos-duration="1000">
           <a href="//sj926thwjdk.cafe24.com/coway/bbs/content.php?co_id=notice">
             <img src="/img/icon4.png" alt="구매 방법">
-            <span>구매 방법</span>
+            <span><a href="http://sj926thwjdk.cafe24.com/coway/bbs/content.php?co_id=notice">구매 방법</a></span>
           </a>
         </li>
       </ul>
@@ -321,7 +321,7 @@ ety_theme_company테마 사용
         <p>코웨이 APP 출시</p>
 				<h2 class='text-light fw_b'>원하는 시간으로 예약도 <span class="fw_b">간편</span>하게</h2>
 				<button type="button" class="btn btn-outline-light google" onclick='window.open("about:blank").location.href="https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Apr0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-hasem-py-Evergreen-Apr0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700058447516882_creativeid_477192617510_device_c&gclid=EAIaIQobChMI3cr5nue38AIVz1VgCh1h-wDUEAAYASAAEgIOKfD_BwE&gclsrc=aw.ds"'><i class="xi-google-play xi-2x"></i><span>Google Play</span></button>
-        <button type="button" class="btn btn-outline-light" onclick='window.open("about:blank").location.href="https://apps.apple.com/kr/app/apple-store/id375380948"'><i class="xi-apple xi-2x"></i><span>Apple Store</span></button>
+        <button type="button" class="btn btn-outline-light" onclick='window.open("about:blank").location.href="https://www.apple.com/kr/app-store/"'><i class="xi-apple xi-2x"></i><span>Apple Store</span></button>
 			</div>
 		</div>
 	</div>
@@ -330,18 +330,13 @@ ety_theme_company테마 사용
 
 <!------------------------------- 퀙메뉴 --------------------------------------->
 <aside id="quick">
-  <!-- <ul class="q_memu">
-    <li><a href="#"><span>카카오톡</span></a></li>
-    <li><a href="#"><span>1:1 문의</span></a></li>
-    <li><a href="#"><span>전화문의</span></a></li>
-  </ul> -->
   <div class="q_btn">
     <div class="pluxBox">
       <button class="inquiry">
         <a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><span class="xi-kakaotalk xi-2x"></span></a>
       </button>
       <button class="inquiry">
-        <a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><span class="xi-call"></span></a>
+        <a href="tel:010-4727-0363" target="_blank"><span class="xi-call"></span></a>
       </button>
     </div>
     <button type="button" name="button" id="quickPlusBtn"><i class="xi-plus-thin"></i></button>

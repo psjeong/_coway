@@ -165,14 +165,7 @@ if(defined('_INDEX_')) {
               </ul>
             </a>
           </li>
-        <?//php }?>
-          <!-- <li><a href="<?//php echo G5_URL?>/bbs/faq.php"><i class="fa fa-question" aria-hidden="true"></i> <span>FAQ</span></a></li>
-          <li><a href="<?//php echo G5_URL?>/bbs/qalist.php"><i class="fa fa-comments" aria-hidden="true"></i> <span>1:1문의</span></a></li>
-          <li><a href="<?//php echo G5_URL?>/bbs/current_connect.php" class="visit"><i class="fa fa-users" aria-hidden="true"></i> <span>접속자</span><strong class="visit-num">
-          1</strong></a></li>
-          <li><a href="<?//php echo G5_URL?>/bbs/new.php"><i class="fa fa-history" aria-hidden="true"></i> <span>새글</span></a></li>
-          <?//php if($is_admin) { ?>
-          <li><a href="<//?php echo G5_URL?>/adm">관리자</a></li> -->
+        
           <?php } ?>
           </ul>
         </div>

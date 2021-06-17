@@ -31,8 +31,7 @@ if (strstr($g5['lo_url'], '/'.G5_ADMIN_DIR.'/') || $is_admin == 'super') $g5['lo
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo G5_URL?>/fa.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="/img/coway_pavicon.ico" />
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;
@@ -83,7 +82,7 @@ if(!defined('G5_IS_ADMIN'))
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:100,300,400,500,700,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
 <!-- Bootstrap core CSS -->
-<link href="<?php echo G5_THEME_URL?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo G5_THEME_URL?>/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 <!-- fontawesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <!-- owl Carousel -->
